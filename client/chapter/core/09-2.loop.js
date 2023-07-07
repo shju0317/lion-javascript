@@ -20,6 +20,8 @@ do{
 // - 사용자로부터 요청된 횟수가 0보다 작을 경우, 
 //   '최초 실행된 메시지입니다. 이 메시지는 조건이 거짓이어도 볼 수 있습니다.' 출력
 // - 순환 중단
+
+/*
 let value = +prompt('몇 번 반복하시겠습니까?');
 
 do{
@@ -31,6 +33,42 @@ do{
   }
   value--;
 }while(value);
+*/
 
 // do ~ while 문 (순환)
 // - 위 do ~ while 문을 순방향으로 순환되도록 설정
+
+
+let first = document.querySelector('.first');
+/*
+// first = first.nextSibling.nextSibling.nextSibling;
+
+do{
+  first = first.nextSibling;
+}while(first.nodeType !== document.ELEMENT_NODE);
+
+console.log(first);
+*/
+
+function next(node){
+  do{
+    node = node.nextSibling;
+  }while(node.nodeType !== 1);
+
+  return node;
+}
+
+const second = next(first);
+
+// console.log(second);
+
+function prev(node){
+  do{
+    node = node.previousSibling;
+  }while(node.nodeType !== 1);
+
+  return node;
+}
+
+const first1 = prev(second);
+console.log(first1);

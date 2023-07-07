@@ -19,3 +19,7 @@
 - [x] Condition4 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/08-4.condition.js)
 - [x] Loop1 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/09-1.loop.js)
 - [x] Loop2 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/09-2.loop.js)
+- [x] Loop3 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/09-3.loop.js)
+- [x] Loop4 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/09-4.loop.js)
+- [x] Loop5 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/09-5.loop.js)
+- [x] function1 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/10-1.function.js)
