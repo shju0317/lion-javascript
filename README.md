@@ -25,3 +25,5 @@
 - [x] function1 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/10-1.function.js)
 - [x] function2 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/10-2.function.js)
 - [x] function3 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/10-3.function.js)
+- [x] object1 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/11-1.object.js)
+- [x] object2 [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/11-2.object.js)
