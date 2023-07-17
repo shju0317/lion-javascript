@@ -38,3 +38,5 @@
 - [x] number [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/17.number.js)
 - [x] string [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/18.string.js)
 - [x] array [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/19.array.js)
+- [x] arrayMethod [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/20.arrayMethod.js)
+- [x] arrayMethod [바로가기](https://github.com/shju0317/lion-javascript/blob/01.core/client/chapter/core/21.tryCatch.js)
