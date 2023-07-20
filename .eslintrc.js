@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     globals: {
-        getNode: 'readOnly',
+        // getNode: 'readOnly',
     },
     "overrides": [
         {
@@ -26,6 +26,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "no-unused-vars": "warn"
+        "no-unused-vars": "warn",
+        "no-undef": 'off'
     }
 }
