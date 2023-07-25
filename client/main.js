@@ -1,4 +1,4 @@
-import { attr, clearContents, diceAnimation, endScroll, getNode, getNodes, insertLast } from "./lib/index.js";
+import { attr, clearContents, diceAnimation, endScroll, getNode, getNodes, insertLast, memo } from "./lib/index.js";
 
 /* [phase1]
   1. dice animation 불러오기
@@ -29,7 +29,10 @@ import { attr, clearContents, diceAnimation, endScroll, getNode, getNodes, inser
 // 배열의 구조 분해 할당
 const [startButton, recordButton, resetButton] = getNodes('.buttonGroup > button');
 const recordListWrapper = getNode('.recordListWrapper');
-const tbody = getNode('.recordList > tbody');
+
+// const tbody = getNode('.recordList > tbody');
+memo('@tbody',()=>getNode('.recordList tbody')); // setter
+memo('@tbody'); // getter
 
 function enableElement(node){
   node.disabled = false;
@@ -67,8 +70,8 @@ function createItem(value){
 }
 
 function renderRecordItem(){
-  diceValue = +attr('#cube','data-dice');
-  insertLast(tbody,createItem(diceValue));
+  diceValue = +attr(memo('cube'),'data-dice');
+  insertLast(memo('@tbody'),createItem(diceValue));
   endScroll(recordListWrapper);
 }
 
@@ -82,7 +85,7 @@ function handleReset(){
   disableElement(recordButton);
   disableElement(resetButton);
 
-  clearContents(tbody);
+  clearContents(memo('@tbody'));
   count = 0;
   total = 0;
 }
