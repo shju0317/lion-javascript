@@ -21,7 +21,7 @@ export const tiger = async (options) => {
       ...options.headers
     }
   }
-  const response = await fetch(url,restOptions);
+  const response = await fetch(url, restOptions);
   if(response.ok){
      response.data = await response.json();
   }
